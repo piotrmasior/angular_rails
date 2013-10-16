@@ -1,4 +1,4 @@
-AngularJS 1.0.8 (target: 1.2, when stable released) Rails 4
+AngularJS 1.0.8 + Rails 4
 ------------
 
 This repository is for learn purpose. It is fine to use generators like angularJS-boilerplate, etc. Although it is nice
@@ -23,3 +23,8 @@ Following commands issued so far:
 ~~~bash
 rails new angular_rails -d=mysql -J
 ~~~
+
+
+Target Updates:
+
+AngularJS (1.2, when stable released)
