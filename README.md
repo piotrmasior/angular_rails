@@ -25,14 +25,26 @@ Possible Enhancements:
 * Use [Grape](https://github.com/intridea/grape) for back-end.
 
 
-
-Following commands issued so far:
+Steps / Commands:
 ---------------------------------
 
 ~~~bash
 rails new angular_rails -d=mysql -J
 ~~~
 
+> Create .ruby-version and .ruby-gemset files
+> Install/Update [NVM](https://github.com/creationix/nvm)
+> Install/Update [NPM](http://stackoverflow.com/questions/6237295/how-can-i-update-nodejs-and-npm-for-the-next-versions)
+
+~~~bash
+sudo npm update npm -g
+~~~
+
+> Install globally Yeoman and AngualarJS see: [angular-generator](https://github.com/yeoman/generator-angular), takes a while
+
+~~~bash
+sudo npm install -g yo generator-angular
+~~~
 
 Target Updates:
 ---------------
