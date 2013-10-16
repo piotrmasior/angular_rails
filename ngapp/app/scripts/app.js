@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('notesApp', [])
+angular.module('arailsApp', [])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

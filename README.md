@@ -24,6 +24,13 @@ Possible Enhancements:
 
 * Use [Grape](https://github.com/intridea/grape) for back-end.
 
+TODO:
+=====
+
+* Add jQuery
+* Create sample resources - use Grape
+* Connect Rails Back and Angular Front
+
 
 Steps / Commands:
 ---------------------------------
@@ -52,10 +59,10 @@ sudo npm install -g yo generator-angular
 
 ~~~bash
 mkdir ngapp; cd ngapp
-yo angular notes
+yo angular arails
 ~~~
 
-> Still inside ngapp directory run: (not sure if --save-dev required)
+> Still inside ngapp directory run: (see: [grunt-connect-proxy](https://github.com/drewzboto/grunt-connect-proxy) )
 
 ~~~bash
 sudo npm install -g grunt-cli
@@ -75,13 +82,17 @@ bower install
 ~~~
 
 
-
 Target Updates:
 ---------------
 
 `If AngularJS 1.0.8 will work flawless`
 
 > AngularJS (1.2, when stable released)
+
+
+Production resources / investigate it:
+--------------------------------------
+http://blog.donaldderek.com/2013/08/cf-i-configure-your-staging-machine-with-node-js-and-nginx/
 
 
 Version: 0.0.0
