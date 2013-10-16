@@ -81,6 +81,12 @@ npm install
 bower install
 ~~~
 
+> By default jquery was not included, so I did:
+
+~~~bash
+bower install jquery
+~~~
+
 
 Target Updates:
 ---------------
@@ -88,6 +94,23 @@ Target Updates:
 `If AngularJS 1.0.8 will work flawless`
 
 > AngularJS (1.2, when stable released)
+
+Development Notes:
+------------------
+
+> Use generators, for instance:
+
+~~~bash
+yo angular:controller user
+yo angular:directive myDirective
+yo angular:filter myFilter
+yo angular:view user
+yo angular:service myService
+yo angular:decorator serviceName
+~~~
+
+> For coffeeScript support see: [link](https://github.com/yeoman/generator-angular#coffeescript)
+
 
 
 Production resources / investigate it:
