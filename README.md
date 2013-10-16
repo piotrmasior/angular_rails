@@ -118,5 +118,45 @@ Production resources / investigate it:
 http://blog.donaldderek.com/2013/08/cf-i-configure-your-staging-machine-with-node-js-and-nginx/
 
 
+Configuration notes:
+=================
+
+> /etc/hosts
+
+~~~
+127.0.0.1 angular.dev
+~~~
+
+> touch /etc/nginx/sites-available/angular_dev; nano /etc/nginx/sites-available/angular_dev
+
+~~~nginx
+server {
+
+        server_name angular.dev;
+
+        location / {
+                proxy_pass http://127.0.0.1:9000;
+                proxy_set_header Host $host;
+        }
+
+}
+~~~
+
+> start rails
+
+~~~bash
+bundle exec rails s
+~~~
+
+
+> start grunt
+
+~~~bash
+cd ngapp; grunt server
+~~~
+
+> accessible now with: angular.dev (via nginx proxy) and http://angular.dev:9000 (direct grunt connection)
+
+
 Version: 0.0.0
 -------

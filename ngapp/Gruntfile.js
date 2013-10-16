@@ -72,12 +72,12 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost'
+        hostname: 'angular.dev'
       },
       proxies: [
         {
           context: '/api',
-          host: 'localhost',
+          host: 'angular.dev',
           port: 3000
         }
       ],
@@ -115,7 +115,7 @@ module.exports = function (grunt) {
     },
     open: {
       server: {
-        url: 'http://localhost:<%= connect.options.port %>'
+        url: 'http://angular.dev:<%= connect.options.port %>'
       }
     },
     clean: {
