@@ -33,18 +33,30 @@ rails new angular_rails -d=mysql -J
 ~~~
 
 > Create .ruby-version and .ruby-gemset files
+
 > Install/Update [NVM](https://github.com/creationix/nvm)
+
 > Install/Update [NPM](http://stackoverflow.com/questions/6237295/how-can-i-update-nodejs-and-npm-for-the-next-versions)
 
 ~~~bash
 sudo npm update npm -g
 ~~~
 
-> Install globally Yeoman and AngualarJS see: [angular-generator](https://github.com/yeoman/generator-angular), takes a while
+> Globally install Yeoman and AngualarJS see: [angular-generator](https://github.com/yeoman/generator-angular), takes a while
 
 ~~~bash
 sudo npm install -g yo generator-angular
 ~~~
+
+> Ensure you are inside Rails root directory and issue following commands: (no for Twitter, include all modules when asked)
+
+~~~bash
+mkdir ngapp; cd ngapp
+yo angular notes
+~~~
+
+
+
 
 Target Updates:
 ---------------
