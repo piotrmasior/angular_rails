@@ -55,6 +55,24 @@ mkdir ngapp; cd ngapp
 yo angular notes
 ~~~
 
+> Still inside ngapp directory run: (not sure if --save-dev required)
+
+~~~bash
+sudo npm install -g grunt-cli
+npm install grunt-connect-proxy --save-dev
+~~~
+
+> now run:
+~~~bash
+grunt server
+~~~
+
+> If it is not working, try:
+
+~~~bash
+npm install
+bower install
+~~~
 
 
 
