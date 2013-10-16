@@ -98,7 +98,7 @@ Target Updates:
 Development Notes:
 ------------------
 
-> Use generators, for instance:
+> Use generators, for instance:  (always be sure you are inside ngapp folder)
 
 ~~~bash
 yo angular:controller user
