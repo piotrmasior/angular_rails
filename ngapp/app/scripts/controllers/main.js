@@ -1,10 +1,15 @@
 'use strict';
 
-angular.module('arailsApp')
+var app = angular.module('arailsApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+
   });
+
+
+app.directive("alert", function() {
+    return function(scope, element) {
+        $(element).bind("mouseenter", function () {
+            console.log("Both jquery and no jquery style wokiing");
+        });
+    }
+});
