@@ -159,5 +159,5 @@ cd ngapp; grunt server
 > accessible now with: angular.dev (via nginx proxy) and http://angular.dev:9000 (direct grunt connection)
 
 
-Version: 0.0.1
+Version: 0.0.2
 -------
