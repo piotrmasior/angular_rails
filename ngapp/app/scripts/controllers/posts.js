@@ -1,10 +1,17 @@
 'use strict';
 
-angular.module('arailsApp')
-  .controller('PostsCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+var myApp = angular.module('arailsApp');
+
+myApp.factory('Post', function($resource) {
+  return {
+    all: function() {
+      return $resource('/api/posts').query();
+    }
+  }
+});
+
+myApp.controller('PostsCtrl', function($scope, $location, Post) {
+  $scope.posts = Post.all();
+});
+
+

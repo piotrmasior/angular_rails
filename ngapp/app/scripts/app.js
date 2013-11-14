@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('arailsApp', [])
+angular.module('arailsApp', ['ngResource'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
