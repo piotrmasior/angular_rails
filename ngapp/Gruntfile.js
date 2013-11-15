@@ -77,8 +77,11 @@ module.exports = function (grunt) {
       proxies: [
         {
           context: '/api',
-          host: 'angular.dev',
-          port: 3000
+          host: 'api.angular.dev',
+          port: 3000,
+          rewrite: {
+            '^/api': ''
+          }
         }
       ],
       livereload: {

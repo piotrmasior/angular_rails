@@ -1,3 +1,3 @@
 AngularRails::Application.routes.draw do
-  mount API::Base => '/api'
+  mount API::Base => '/'
 end

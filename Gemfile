@@ -6,7 +6,9 @@ gem 'mysql2'
 gem 'jbuilder', '~> 1.2'
 gem 'ffaker'
 gem 'grape'
+gem 'grape-swagger'
 gem 'kaminari'
+
 
 group :doc do
   gem 'sdoc', require: false

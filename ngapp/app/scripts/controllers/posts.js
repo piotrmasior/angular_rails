@@ -5,7 +5,7 @@ var myApp = angular.module('arailsApp');
 myApp.factory('Post', function($resource) {
   return {
     all: function() {
-      return $resource('/api/posts').query();
+      return $resource('api/posts').query();
     }
   }
 });
